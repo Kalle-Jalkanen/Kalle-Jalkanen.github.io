@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+}
+body {
+    background-color: #141218;
+    font-family: 'Roboto', 'Lucida Sans Unicode';
+    font-size: 1.2em;
+    text-align: center;
+    border: 0;
+}
+article.page {
+    max-width: 80%;
+    margin: auto;
+}
+.bgimage {
+    background-image: url("../img/laituri.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header, #top {
+    background: rgba(0, 0, 0, 0.7);
+    font-family: "papyrus";
+    font-size: 3em;
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 2em 0em 1.25em 0em;
+    box-shadow: inset 0em 0.125em 0.9em 0.125em black;
+}
+.headStyle {
+    font-size: 0.5em;
+    font-family: courier;
+    font-weight: lighter;
+ }
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 12em;
+}
+.white {
+    font-size: 2em;
+}
+
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #001b30;    
+}  
+/* Navbar links */
+#navbar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+#navbar a:hover {
+    color: #ffbb00;
+    transform: scale(1.25);
+    border-radius: 1em;
+    box-shadow: inset 0em 0.125em 0.9em 0.125em #001220;
+}
+p.navs {
+    display: none;
+}
+/* Page content */
+.content {
+    padding: 16px;
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 80%;
+    box-shadow: 0em 0.125em 0.9em 0.125em #000000;
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
+} 
+.sticky p {
+    display: block;
+    color: white;
+    font-family: "papyrus";
+    font-size: 1.75em;
+    margin-top: 0.5em;
+}
+/* -----Navbar END----- */
+
+h2 {
+    background-color: #001b30;
+    border-radius: 0.3em;
+    color: white;
+    text-align: center;
+    padding: 0.5em 0em 0.5em 0em;
+    margin-bottom: 1em;
+}
+h3 {
+    padding: 1em 0em 0.5em 0em;
+}
+section {
+    overflow: hidden;
+    line-height: 1.75em;
+    background-color: #6b7d8b;
+    border-bottom: none;
+    width: auto;
+    height: auto;
+}
+.ownimg {
+    float: left;
+    width: 35%;
+    border-radius: 8em;
+    box-shadow: 0em 0.125em 0.9em 0.125em #000000;
+    margin: 3em 0.5em 2em 4em;
+}
+section.content_righttop {
+    background-color: white;
+    float: right;
+    max-width: 600px;
+    height: auto;
+    border-radius: 1em;
+    box-shadow: 0em 0em 0.5em 0em #202020;
+    margin: 5em 4em 2em 0.5em;  
+    text-align: center;
+    padding: 1em 1em;
+}
+section.contentp, #portfolio {
+    background-color: white;
+    width: 60%;
+    height: auto;
+    border-radius: 1em;
+    box-shadow: 0em 0em 0.5em 0em #202020;
+    margin: 3em auto;
+    text-align: left;
+    padding: 1em 1em;
+}
+section.contenth, #harrastukset {
+    background-color: white;
+    width: 60%;
+    height: auto;
+    border-radius: 1em;
+    box-shadow: 0em 0em 0.5em 0em #202020;
+    text-align: left;
+    margin: 3em auto;
+    padding: 1em 1em;
+}
+section.contentt {
+    padding: 0em 15%;
+}
+footer {
+    background-color: #001b30;
+    color: white;
+
+    padding: 0.75em;
+    height: auto;
+    text-align: center;
+}
+@media only screen and (max-width: 1600px) {
+    section.content_righttop {
+    float: none;
+    max-width: none;
+    width: 80%;
+    margin: 3% auto;
+    }
+    .ownimg {
+        float: none;
+        width: 40%;
+        margin: 3% auto;
+    }
+    #harrastukset , #portfolio {
+        width: 80%;
+        margin: 3% auto;
+    }
+}
+@media only screen and (max-width: 750px) {
+    article.page {
+        max-width: 100%;
+        margin: auto;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    header, #top {
+        font-size: 2em;
+    }
+}
+@media only screen and (max-width: 353px) {
+    .sticky p{
+        font-size: 1.25em;
+    }
+    #navbar a {
+        padding-top: 0em;
+        padding-bottom: 0.5em;
+    }
+}
